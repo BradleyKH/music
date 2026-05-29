@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Favorite Piano Pieces</title>
         <style>
             body {
@@ -12,6 +13,7 @@
                 color: #2a2a2a;
                 background: #fbf8f3;
                 line-height: 1.55;
+                -webkit-text-size-adjust: 100%;
             }
             h1 {
                 font-size: 2rem;
@@ -51,6 +53,33 @@
             }
             a.listen:hover {
                 color: #b22222;
+            }
+
+            @media (max-width: 600px) {
+                body {
+                    margin: 1.5rem auto;
+                    padding: 0 1rem;
+                    line-height: 1.6;
+                }
+                h1 {
+                    font-size: 1.6rem;
+                }
+                h2 {
+                    font-size: 1.15rem;
+                }
+                ul {
+                    padding-left: 1.1rem;
+                }
+                li {
+                    margin: 0.7rem 0;
+                }
+                a.listen {
+                    display: inline-block;
+                    margin-left: 0;
+                    margin-top: 0.2rem;
+                    font-size: 0.85em;
+                    padding: 0.2rem 0;
+                }
             }
         </style>
     </head>
